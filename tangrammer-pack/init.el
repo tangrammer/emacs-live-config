@@ -31,7 +31,8 @@
 (global-set-key (kbd "M-+") 'hs-show-block)
 (global-set-key (kbd "M-*") 'hs-show-all)
 (global-set-key (kbd "M--") 'hs-hide-block)
-(global-set-key (kbd "M-_") 'hs-hide-level)
+(global-set-key (kbd "M-Ç") 'hs-hide-level)
+(global-set-key (kbd "M-:") 'hs-hide-all)
 
 (global-set-key
  (kbd "C-X C-S")
