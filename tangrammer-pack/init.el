@@ -3,6 +3,12 @@
 ;; Use this file to initiate the pack configuration.
 ;; See README for more information.
 
+
+
+
+
+
+
 ;; Load bindings config
 (live-load-config-file "bindings.el")
 (remove-if (lambda (x)
@@ -66,3 +72,11 @@
 ;; this line is mine, from http://stackoverflow.com/questions/93058/emacs-switching-to-another-frame-mac-os-x
 ;; it's used for changing the actual frame
 (global-set-key (kbd "M-o") 'other-frame)
+
+
+(live-add-pack-lib "processing2-emacs")
+(require 'processing-mode)
+(add-to-list 'auto-mode-alist '("\\.pde$" . processing-mode))
+
+(setq cider-repl-history-file "~/git/cider-repl-history")
+(setenv "CYLON_HOME" "/Users/tangrammer/git/olney/cylon")
