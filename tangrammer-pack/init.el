@@ -16,7 +16,7 @@
            default-frame-alist)
 (cond
  ((and (window-system) (eq system-type 'darwin))
-  (add-to-list 'default-frame-alist '(font . "Courier 20"))))
+  (add-to-list 'default-frame-alist '(font . "Courier 16"))))
 
 ; osx keys
 (setq default-input-method "MacOSX")
@@ -75,8 +75,8 @@
 
 
 (live-add-pack-lib "processing2-emacs")
-(require 'processing-mode)
-(add-to-list 'auto-mode-alist '("\\.pde$" . processing-mode))
+;;(require 'processing-mode)
+;;(add-to-list 'auto-mode-alist '("\\.pde$" . processing-mode))
 
 (setq cider-repl-history-file "~/git/cider-repl-history")
 (setenv "CYLON_HOME" "/Users/tangrammer/git/olney/cylon")
