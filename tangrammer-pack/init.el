@@ -80,3 +80,14 @@
 
 (setq cider-repl-history-file "~/git/cider-repl-history")
 (setenv "CYLON_HOME" "/Users/tangrammer/git/olney/cylon")
+
+(live-load-config-file "jsx-mode.el")
+
+(add-to-list 'auto-mode-alist '("\\.js\\'" . jsx-mode))
+(autoload 'jsx-mode "jsx-mode" "JSX mode" t)
+
+
+(live-load-config-file "editorconfig.el")
+(add-hook 'jsx-mode-hook 'hs-minor-mode)
+
+(add-to-list 'auto-mode-alist '("\\.cljc\\'" . clojure-mode))
